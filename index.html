@@ -19,6 +19,7 @@
       NodeList.prototype.forEach = Array.prototype.forEach;
     }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 </head>
 
 <body>
@@ -35,30 +36,78 @@
             </p>
             <!-- lightbox container hidden with CSS -->
         </div>
-        <div class="photo-row">
-          <a href="#img1">
-            <img src="images/house1.jpg" class="thumbnail">
-          </a>
-          <a href="#_" class="lightbox" id="img1">
-            <img src="images/house1.jpg">
-          </a>
-
-          <a href="#img2">
-            <img src="images/house2.jpg" class="thumbnail">
-          </a>
-          <a href="#_" class="lightbox" id="img2">
-            <img src="images/house2.jpg">
-          </a>
-
-          <a href="#img3">
-            <img src="images/house3.jpg" class="thumbnail">
-          </a>
-          <a href="#_" class="lightbox" id="img3">
-            <img src="images/house3.jpg">
-          </a>
+        <a href="#_" class="lightbox" id="img1">
+          <img src="images/house1.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img2">
+          <img src="images/house2.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img3">
+          <img src="images/house3.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img4">
+          <img src="images/house4.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img5">
+          <img src="images/house5.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img6">
+          <img src="images/house6.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img7">
+          <img src="images/house7.jpg">
+        </a>
+        <div class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell">
+            <a href="#img1">
+              <img src="images/house1.jpg" class="thumbnail">
+            </a>
+          </div>
+          <div class="gallery-cell">
+            <a href="#img2">
+              <img src="images/house2.jpg" class="thumbnail">
+            </a>
+           
+          </div>
+          <div class="gallery-cell">
+            <a href="#img3">
+              <img src="images/house3.jpg" class="thumbnail">
+            </a>
+            
+          </div>
+          <div class="gallery-cell">
+            <a href="#img4">
+              <img src="images/house4.jpg" class="thumbnail">
+            </a>
+            
+          </div>
+          <div class="gallery-cell">
+            <a href="#img5">
+              <img src="images/house5.jpg" class="thumbnail">
+            </a>
+            
+          </div>
+          <div class="gallery-cell">
+            <a href="#img6">
+              <img src="images/house6.jpg" class="thumbnail">
+            </a>
+            
+          </div>
+          <div class="gallery-cell">
+            <a href="#img7">
+              <img src="images/house7.jpg" class="thumbnail">
+            </a>
+            
+          </div>
         </div>
         <div class="development-info">
-          <h2>Homes starting at <strong>$350,000+</strong></h2>
+          <div class="development-cell">
+            <h2>Homes starting at <strong>$350,000+</strong></h2>
+          </div>
+          <div class="development-cell">
+            <h2>Some other information here</h2>
+          </div>
         </div>
         <div class="map">
           <div class=map-container>
@@ -67,11 +116,11 @@
         </div>
         <div class="contact">
           <h2>Interested?  Contact us!</h2>
-          <h3><a href="tel:1234567890" target="_blank">123.456.7890</a></h3>
-          <h3><a href="mailto:dave@summitbuildersak.com" target="_blank">dave@summitbuildersak.com</a></h3>
+          <h3><a href="tel:1234567890" target="_blank"><span class="material-icons">call</span>123.456.7890</a></h3>
+          <h3><a href="mailto:dave@summitbuildersak.com" target="_blank"><span class="material-icons">email</span>dave@summitbuildersak.com</a></h3>
         </div>
       </section>
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script></script>
   </div>
 </body>
 
