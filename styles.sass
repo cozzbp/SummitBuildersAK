@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600,700')
+
+$color-overlay: rgba(50,50,50,0.3)
+$color-overlay-bottom: #5b857e
+
+$color-white: rgba(255,255,255,0.9)
+
+
+
+$color-alt: #5b857e
+
+$color-black: rgba(255,255,255,0.9)
+
+html
+  background: black
+  font-family: 'Roboto',sans-serif
+  font-weight: 400
+  color: $color-white
+  a 
+    text-decoration: none
+    cursor: pointer
+    &:link
+      text-decoration: none
+      color: $color-white
+    &:visited
+      text-decoration: none
+      color: $color-white
+    &:active
+      text-decoration: none
+      color: $color-white
+    &:-webkit-any-link
+      color: $color-white
+
+.main-wrapper
+  overflow: hidden
+  position: relative
+  height: 100%
+
+.main-section
+  background: linear-gradient($color-overlay 0%, $color-overlay-bottom 50%) no-repeat center center scroll, url('images/palmer.jpg') no-repeat center top fixed
+  background-size: 100% auto, 100% auto
+  height: 100%
+  width: 100%
+
+  .header-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h2 
+      font-size: 3em
+
+    p
+      font-size: 1.5rem
+      width: 50%
+      text-align: center
+
+.logo
+  display: flex
+  flex-direction: row-reverse
+  align-content: flex-end
+  padding: 15px
+  img
+    width: 500px
+    color: $color-white
+
+.photo-row
+  display: flex
+  flex-direction: row
+  background-color: $color-alt
+
+.development-info
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  min-height: 100px
+  background-color: $color-alt
+  color: $color-black
+
+  h2
+    font-weight: 400
+
+  strong
+    font-weight: 700
+
+.map
+  display: flex
+  align-items: center
+  flex-direction: column
+  background-color: $color-alt
+  
+  .map-container
+    width: 100%
+
+.contact
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  min-height: 100px
+  background-color: $color-alt
+  color: $color-black
+  a 
+    text-decoration: none
+    cursor: pointer
+    &:link
+      text-decoration: none
+      color: $color-black
+    &:visited
+      text-decoration: none
+      color: $color-black
+    &:active
+      text-decoration: none
+      color: $color-black
+    &:-webkit-any-link
+      color: $color-black
+
+body
+  margin: 0
+  overflow-x: hidden
+  position: relative
+  &::-webkit-scrollbar
+    background: linear-gradient(#1B2735 0vh, #000 50vh)
+    border-left: none
+    margin-right: 10px
+    width: 10px
+    height: 10px
+
+  &::-webkit-scrollbar-button
+    width: 0px
+    height: 0px
+
+  &::-webkit-scrollbar-thumb
+    background-clip: content-box
+    background-color: rgba(200, 200, 255, 0.2)
+    border: 1px solid transparent
+    border-radius: 0px
+
+  &::-webkit-scrollbar-corner
+    background: transparent
+
+
+//Lightbox
+.thumbnail
+  max-width: 100%
+
+.lightbox
+  display: none
+
+  position: fixed
+  z-index: 999
+  width: 100%
+  height: 100%
+  text-align: center
+  top: 0
+  left: 0
+  background: rgba(0,0,0,0.8)
+
+
+.lightbox img
+  max-width: 90%
+  max-height: 80%
+  margin-top: 2%
+
+.lightbox:target 
+  outline: none
+
+  display: block
