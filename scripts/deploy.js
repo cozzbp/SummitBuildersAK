@@ -8,7 +8,7 @@ const mime = require('mime-types');
 const config = {
   s3BucketName: 'summitbuildersak.com',
   profile: 'summitbuildersak',
-  folderPath: '../dist'
+  folderPath: '../docs'
 };
 
 // initialise S3 client
